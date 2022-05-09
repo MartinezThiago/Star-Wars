@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.title {
+  font-size: 60px;
+  color: black;
+  -webkit-text-stroke: 2px #fcc900;
+  text-decoration: underline;
+}
+/*.charac-dat{
+  color: #fcc900;
+  font-size: 20px;
+}
+.charac{
+  color:#fcc900;
+  font-size: 40px;
+  font-weight: bold;
+}*/
+body {
+  /*background-image: url('../public/img/fondo-StarWars.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;*/
+  height: 100vh;
+  background-color: black;
+}
+#allchars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
